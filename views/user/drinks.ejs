@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu</title>
     <link rel="stylesheet" href="/css/menu.css">
-    <script src="/menu.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
@@ -13,219 +12,238 @@
 
 </style>
 <body>
+    <header>
 
-<header>
-    <div class="logo">
-        <h2>BiteHub</h2>
+        <div class="logo">
+            <h2>BiteHub</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Cart 🛒 <span id="cartCount">0</span></a>
+            <a href="#">Login</a>
+        </nav>
+
+    </header>
+
+
+    <div class="main-content">
+        <div class="food-section">
+
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/sprite.jpg" alt="sprite">
+                    <h3>sprite</h3>
+                    <p>₹99</p>
+                <button onclick="addItem()">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/cococola.jpg" alt="cococola">
+                    <h3>cococola</h3>
+                    <p>₹99</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/fanta.jpg" alt="fanta">
+                    <h3>fanta</h3>
+                    <p>₹99</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/pepsi.jpg" alt="pepsi">
+                    <h3>pepsi</h3>
+                    <p>₹99</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/coconut water.jpg" alt="coconut water">
+                    <h3>coconut water</h3>
+                    <p>₹79</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/chocolate.jpg" alt="chocolate">
+                    <h3>chocolate</h3>
+                    <p>₹49</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/lemon mojito.jpg" alt="lemon mojito">
+                    <h3>lemon mojito</h3>
+                    <p>₹99</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/kivi smoothie.jpg" alt="kivi smoothie">
+                    <h3>kivi smoothie</h3>
+                    <p>₹79</p>
+            <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/blueberry smoothie.jpeg" alt="blueberry smoothie">
+                    <h3>blueberry smoothie</h3>
+                    <p>₹79</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/vanilla milkshake.jpg" alt="vanilla milkshake">
+                    <h3>vanilla milkshake</h3>
+                    <p>₹49</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/mango juice.jpg" alt="mango juice">
+                    <h3>mango juice</h3>
+                    <p>₹49</p>
+                    <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/banana shake .jpg" alt="banana shake">
+                    <h3>banana shake</h3>
+                    <p>₹49</p>
+            <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/watermelon.jpg" alt="watermelon">
+                    <h3>watermelon juice</h3>
+                    <p>₹79</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/guava .jpg" alt="guava">
+                    <h3>guava juice</h3>
+                    <p>₹79</p>
+            <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/sugarcane .jpg" alt="sugarcane">
+                    <h3>sugarcane</h3>
+                    <p>₹49</p>
+            <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/cold coffee.jpg" alt="cold coffee">
+                    <h3>cold coffee</h3>
+                    <p>₹79</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/oreo .jpg" alt="oreo">
+                    <h3>oreo shake</h3>
+                    <p>₹49</p>
+            <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/tea.jpg" alt="tea">
+                    <h3>tea</h3>
+                    <p>₹29</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/bel.jpg" alt="bel">
+                    <h3>bel juice</h3>
+                    <p>₹49</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/pineapple.jpg" alt="pineapple">
+                    <h3>pine apple</h3>
+                    <p>₹79</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/grapes.jpg" alt="grapes">
+                    <h3>grapes juice</h3>
+                    <p>₹79</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+            </section>
+            <section class="menu">
+
+                <div class="card">
+                    <img src="image/green tea.jpg" alt="green tea">
+                    <h3>green tea</h3>
+                    <p>₹49</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/rooh afza.jpg" alt="rooh afza">
+                    <h3>rooh afza</h3>
+                    <p>₹49</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="image/bisleri .jpg" alt="bisleri">
+                    <h3>bisleri</h3>
+                    <p>₹19</p>
+                    <button onclick="addItem(this)">Add to Cart</button>
+                </div>
+            </section>
+        </div>
+         <div class="cart-container">
+
+                <h2>My Cart 🛒</h2>
+
+                <ul id="cartItems"></ul>
+
+                <div class="cart-footer">
+
+                    <h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+                    <button id="checkoutBtn">
+                        Checkout
+                    </button>
+
+                </div>
+
+            </div>
+
     </div>
 
-    <div class="search">
-        <input type="text" placeholder="Search your favourite food">
-    </div>
-
-    <nav>
-        <a href="/cart" class="btn">Cart <span id="cartCount">0</span></a>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-</a>
-        <a href="#">Login</a>
-    </nav>
-</header>
-
-<section class="menu">
-
-    <div class="card">
-        <img src="image/sprite.jpg" alt="sprite">
-        <h3>sprite</h3>
-        <p>₹99</p>
-     <button onclick="addToCart()">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/cococola.jpg" alt="cococola">
-        <h3>cococola</h3>
-        <p>₹99</p>
-       <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/fanta.jpg" alt="fanta">
-        <h3>fanta</h3>
-        <p>₹99</p>
-    <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/pepsi.jpg" alt="pepsi">
-        <h3>pepsi</h3>
-        <p>₹99</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/coconut water.jpg" alt="coconut water">
-        <h3>coconut water</h3>
-        <p>₹79</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/chocolate.jpg" alt="chocolate">
-        <h3>chocolate</h3>
-        <p>₹49</p>
-    <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/lemon mojito.jpg" alt="lemon mojito">
-        <h3>lemon mojito</h3>
-        <p>₹99</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/kivi smoothie.jpg" alt="kivi smoothie">
-        <h3>kivi smoothie</h3>
-        <p>₹79</p>
-  <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/blueberry smoothie.jpeg" alt="blueberry smoothie">
-        <h3>blueberry smoothie</h3>
-        <p>₹79</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/vanilla milkshake.jpg" alt="vanilla milkshake">
-        <h3>vanilla milkshake</h3>
-        <p>₹49</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/mango juice.jpg" alt="mango juice">
-        <h3>mango juice</h3>
-        <p>₹49</p>
-        <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/banana shake .jpg" alt="banana shake">
-        <h3>banana shake</h3>
-        <p>₹49</p>
-<button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/watermelon.jpg" alt="watermelon">
-        <h3>watermelon juice</h3>
-        <p>₹79</p>
-     <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/guava .jpg" alt="guava">
-        <h3>guava juice</h3>
-        <p>₹79</p>
-<button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/sugarcane .jpg" alt="sugarcane">
-        <h3>sugarcane</h3>
-        <p>₹49</p>
-<button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/cold coffee.jpg" alt="cold coffee">
-        <h3>cold coffee</h3>
-        <p>₹79</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/oreo .jpg" alt="oreo">
-        <h3>oreo shake</h3>
-        <p>₹49</p>
-<button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/tea.jpg" alt="tea">
-        <h3>tea</h3>
-        <p>₹29</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/bel.jpg" alt="bel">
-        <h3>bel juice</h3>
-        <p>₹49</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/pineapple.jpg" alt="pineapple">
-        <h3>pine apple</h3>
-        <p>₹79</p>
-    <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/grapes.jpg" alt="grapes">
-        <h3>grapes juice</h3>
-        <p>₹79</p>
-       <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-</section>
-<section class="menu">
-
-    <div class="card">
-        <img src="image/green tea.jpg" alt="green tea">
-        <h3>green tea</h3>
-        <p>₹49</p>
-       <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/rooh afza.jpg" alt="rooh afza">
-        <h3>rooh afza</h3>
-        <p>₹49</p>
-      <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="image/bisleri .jpg" alt="bisleri">
-        <h3>bisleri</h3>
-        <p>₹19</p>
-        <button onclick="addItem(this)">Add to Cart</button>
-    </div>
-</section>
-<h2>My Cart 🛒</h2>
-<ul id="cartItems"></ul>
-<h3>Total: ₹<span id="totalPrice">0</span></h3>
 </body>
+<script src="/menu.js"></script>
 
 </html>

@@ -125,8 +125,9 @@ body{
 }
 
 .nav-btn{
-    background: #eee;
-    color: #333;
+    background: #FF5722;
+    color: white;
+    box-shadow:0 10px 25px rgba(255, 87, 34, 0.3) ;
 }
 
 .nav-btn.primary{
@@ -215,7 +216,7 @@ body{
     position:relative;
     min-height:420px;
 
-    background-image:url("image/food.png");
+    background-image:url("/image/food.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -309,7 +310,7 @@ body{
 
 .food-section{
     padding: 80px 0;
-    background-image: url("image/foo-bg.jpg");
+    background-image: url("/image/foo-bg.jpg");
     background-size: cover;
     background-position: center;
 }

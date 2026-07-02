@@ -19,10 +19,24 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="login"><button class="nav-btn">Login/SignIn</button></a>
-        <a href="/signup">Signup</a>
-        <a href="/admin/dashboard">Admin</a>
-      </div>
+
+        <a href="/login">
+            <button class="nav-btn">Login</button>
+        </a>
+
+        <a href="/signup">
+            <button class="nav-btn">Sign Up</button>
+        </a>
+
+        <% if(user && user.role === "admin"){ %>
+
+            <a href="/admin/dashboard">
+                <button class="nav-btn">Admin Panel</button>
+            </a>
+
+        <% } %>
+
+    </div>
 
       <div class="hamburger" id="hamburger">☰</div>
 
