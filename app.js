@@ -24,6 +24,8 @@ app.use("/user", userRoute);
 app.use("/admin", auth, isAdmin, adminRoute);
 app.use(express.static(path.join(__dirname,"public")));
 
+app.set("view engine","ejs");
+app.set("views",path.join(__dirname,"views"));
 
 connectDb();
 
@@ -40,9 +42,6 @@ app.get("/add-food", async (req, res) => {
 
     res.send("Food Added");
 });
-
-app.set("view engine","ejs");
-app.set("views",path.join(__dirname,"views"));
 
 app.get("/", (req, res) => {
     res.render("user/home", {
